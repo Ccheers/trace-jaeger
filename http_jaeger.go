@@ -35,6 +35,7 @@ func StartTracer(conf *jaegerConfig.Configuration) blademaster.HandlerFunc {
 		//c.Context = context.WithValue(c,"ParentSpanContext",parentSpan.Context())
 		c.Set("Tracer", tracer)
 		c.Set("ParentSpanContext", opentracing.ContextWithSpan(c, parentSpan))
+		c.Set("SpanContext", parentSpan.Context())
 		c.Next()
 	}
 }
