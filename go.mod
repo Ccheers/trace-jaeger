@@ -1,4 +1,4 @@
-module kratos/trace_jaeger
+module github.com/Ccheers/trace-jaeger
 
 go 1.13
 
