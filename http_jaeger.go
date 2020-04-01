@@ -1,7 +1,7 @@
 package trace_jaeger
 
 import (
-	"github.com/bilibili/kratos/pkg/net/http/blademaster"
+	"github.com/go-kratos/kratos/pkg/net/http/blademaster"
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 	jaegerConfig "github.com/uber/jaeger-client-go/config"
